@@ -1,0 +1,98 @@
+# Node.js
+node_modules/
+node_modules/.cache/
+
+# Generated files
+build/
+dist/
+
+# Dependency directories
+# These are directories that might be created by tools like Bower or bundlers
+# node_modules/ is mentioned above, but this is a precaution
+bower_components/
+jspm_packages/
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+
+# ESLint
+.eslintcache
+
+# Testing
+coverage/
+
+# .vscode folder
+.vscode/
+
+# macOS
+.DS_Store
+
+# Editor directories and files
+.idea/
+*.suo
+*.ntvs*
+
+# Sublime Text
+*.sublime-*
+*.sublime-workspace
+*.sublime-project
+
+# WebStorm
+.idea/
+*.iml
+
+# Visual Studio
+.vscode/
+.vs/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.log
+*.tmp
+
+# Log files
+*.log
+
+# OS generated files
+ehthumbs_vista.db
+Desktop.ini
+Icon?
+ehthumbs_vista.db
+
+# Windows Installer files
+*.cab
+*.msi
+
+# Logs and databases
+*.sqlite
+*.sqlite3
+*.sql
+*.log
+
+# Binary files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.woff
+*.woff2
+*.eot
+*.ttf
+*.otf
+
+# Build files
+*.css
+*.js
+*.map
