@@ -32,6 +32,7 @@ The build is minified and the filenames include the hashes.\
 
 The TC is located at `public/index.html`
 
-![Alt text](image.png)
+![image](https://github.com/FCartier/fcartier.github.io/assets/18403658/f17c06b4-4c2e-46ad-af5b-e79f2b9288ce)
+
 
 To change the code, you just need replace the value of `hjid`, currently set to `3706273` and deploy the site again.
