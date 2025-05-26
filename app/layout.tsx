@@ -1,45 +1,41 @@
-import { ReactNode } from 'react'
-import Link from 'next/link';
-import { Metadata } from 'next'
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-// These styles apply to every route in the application
-import './globals.css'
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: 'Florian Cartier - Software Engineer',
-}
+  title: "Florian Cartier - Senior Engineering Manager",
+  description: "Portfolio of Florian Cartier, a Senior Engineering Manager specializing in leading high-performing engineering teams and driving product success. Based in Barcelona.",
+  keywords: "Florian Cartier, Engineering Manager, Senior Engineering Manager, Tech Leadership, Software Development, Web Development, React, Node.js, TypeScript, Portfolio, Barcelona, ContentSquare, Hotjar, Carbon Crushers",
+};
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-export default function Layout({ children }: LayoutProps) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <>
-      <header className='flex flex-row w-full bg-indigo-500 h-28 content-center'>
-        {/* Logo and Header Content */}
-        <div className='logo bg-white w-1/4 text-center  '>
-          Florian Cartier
-        </div> 
-        {/* Navigation Links */}
-        <nav className='flex flex-row gap-4 bg-red-200 mr-2 justify-evenly w-3/4'>
-
-              <Link href="/Projects">Projects</Link>
-
-              <Link href="/Playground">Playground</Link>
-
-              <Link href="/Blog">Blog</Link>
-
-        </nav>
-      </header>
-
-      <main>
-        {children}
-      </main>
-
-      <footer>
-        {/* Footer Content */}
-      </footer>
-    </>
-  )
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+      >
+        <Header />
+        <main className="flex-grow container mx-auto px-4 py-8">
+          {children}
+        </main>
+        <Footer />
+      </body>
+    </html>
+  );
 }

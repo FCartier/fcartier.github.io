@@ -1,98 +1,46 @@
-# Node.js
-node_modules/
-node_modules/.cache/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Generated files
-build/
-dist/
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Dependency directories
-# These are directories that might be created by tools like Bower or bundlers
-# node_modules/ is mentioned above, but this is a precaution
-bower_components/
-jspm_packages/
+# testing
+/coverage
 
-# Output of 'npm pack'
-*.tgz
+# next.js
+/.next/
+/out/
 
-# Yarn
-yarn-error.log
-.pnp/
-.pnp.js
+# production
+/build
 
-# ESLint
-.eslintcache
-
-# Testing
-coverage/
-
-# .vscode folder
-.vscode/
-
-# macOS
+# misc
 .DS_Store
+*.pem
 
-# Editor directories and files
-.idea/
-*.suo
-*.ntvs*
-
-# Sublime Text
-*.sublime-*
-*.sublime-workspace
-*.sublime-project
-
-# WebStorm
-.idea/
-*.iml
-
-# Visual Studio
-.vscode/
-.vs/
-
-# Windows
-Thumbs.db
-ehthumbs.db
-
-# Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
+# debug
 *.log
-*.tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Log files
-*.log
+# env files
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env # if you have a base .env file that's not local-specific and should be ignored
 
-# OS generated files
-ehthumbs_vista.db
-Desktop.ini
-Icon?
-ehthumbs_vista.db
+# vercel
+.vercel
 
-# Windows Installer files
-*.cab
-*.msi
-
-# Logs and databases
-*.sqlite
-*.sqlite3
-*.sql
-*.log
-
-# Binary files
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.ico
-*.woff
-*.woff2
-*.eot
-*.ttf
-*.otf
-
-# Build files
-*.css
-*.js
-*.map
+# typescript
+*.tsbuildinfo
+next-env.d.ts
